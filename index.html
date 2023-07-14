@@ -42,7 +42,7 @@
     <div id="app" class="container">
       <h1>Productos</h1>
       <br>
-      <a class="btn btn-success" href="/producto_nuevo.html">Nuevo</a>
+      <a class="btn btn-success" href="./producto_nuevo.html">Nuevo</a>
       <br><br>
       <div v-if="error">
         <p>Lo sentimos , ........</p>
@@ -63,7 +63,7 @@
                   <h5 class="card-title">{{ producto.nombre }}</h5>
                   <p class="card-text">Precio: {{ producto.precio }}</p>
                   <p class="card-text">Stock: {{ producto.stock }}</p>
-                  <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id">Editar</a>
+                  <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
                   <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)">Eliminar</button>
                 </div>
               </div>
